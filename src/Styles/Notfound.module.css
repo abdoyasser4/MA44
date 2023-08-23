@@ -1,0 +1,22 @@
+* {
+    padding: 0;
+    margin: 0;
+    font-family: 'Montserrat', sans-serif;
+}
+
+.notFoundsection {
+    width: 100%;
+    background-color: white;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.notFoundsection .image {
+    width: 50%;
+}
+
+img {
+    width: 100%;
+}

@@ -1,0 +1,38 @@
+.parent {
+   
+    display:flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items:center;
+    margin:10px;
+    padding:10px;
+    
+}
+.parent .parent2 {
+    border:2px solid #d3213b;
+    padding: 10px;
+    width:50%;
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align:center;
+}
+.parent .parent2 div{
+    margin:10px;
+    padding:5px;
+    width:100%;
+    display:flex;
+}
+.parent .parent2 div input {
+    width:100%;
+    padding:10px;
+    margin:0px;
+
+}
+.parent .parent2  button {
+    padding:10px;
+    font-weight:bold;
+    border-radius: 20px;
+    border:none;
+}

@@ -1,0 +1,154 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+
+* {
+    padding: 0;
+    margin: 0;
+    font-family: 'Montserrat', sans-serif;
+}
+
+.signupSection {
+    width: 100%;
+    height: 100vh;
+    background-color: #15161d;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.container {
+    background-color: white;
+    width: 25%;
+    padding: 50px;
+}
+
+.titleH2 {
+    text-align: center;
+}
+
+.titleSpan {
+    color: #d3213b;
+}
+
+.signNav {
+    display: flex;
+    justify-content: space-between;
+    list-style: none;
+    margin: 20px 0 30px 0;
+}
+
+.loginNavItem,
+.SignNavItem {
+    width: 50%;
+}
+
+.loginNavLink,
+.SignNavLink {
+    width: 100%;
+    display: inline-block;
+    text-align: center;
+    padding: 10px 0;
+    text-decoration: none;
+}
+
+
+.loginNavLink {
+    background-color: #fbe9eb;
+}
+
+.loginLink,
+.SignLink {
+    text-decoration: none;
+    font-weight: 500;
+}
+
+.loginLink {
+    color: #d3213b;
+}
+
+.SignNavLink {
+    background-color: #d3213b;
+}
+
+.SignLink {
+    color: #fbe9eb;
+    text-decoration: none;
+    font-weight: 500;
+}
+
+.fieldContainer {
+    width: 100%;
+}
+
+.inputInfo {
+    width: calc(100% - 23px);
+    margin-bottom: 15px;
+    padding: 10px 10px;
+    border: 1px solid #777777;
+    color: black;
+}
+
+.inputInfo::placeholder {
+    color: #777777;
+}
+
+.inputInfo:focus {
+    outline: none;
+    border-color: black;
+}
+
+.submit {
+    width: 100%;
+    padding: 10px 0;
+    border: none;
+    background-color: #d3213b;
+    color: white;
+    font-weight: 500;
+    font-size: 17px;
+    margin-top: 20px;
+}
+
+label {
+    color: #d3213b;
+}
+
+input[type="checkbox"] {
+    margin-right: 10px;
+    background-color: #d3213b;
+}
+
+@media (max-width: 575px) {
+    .container {
+        width: 65%;
+    }
+
+    .titleH2 {
+        font-size: 27px;
+    }
+}
+
+@media (min-width: 576px) {
+    .container {
+        width: 70%;
+    }
+}
+
+@media (min-width: 768px) {
+    .container {
+        width: 50%;
+    }
+}
+
+
+@media (min-width: 992px) {
+    .container {
+        width: 40%;
+    }
+}
+
+
+@media (min-width: 1200px) {
+    .container {
+        width: 25%;
+    }
+}

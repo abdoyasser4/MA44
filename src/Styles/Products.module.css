@@ -1,0 +1,119 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+* {
+    padding: 0;
+    margin: 0;
+    font-family: 'Montserrat', sans-serif;
+}
+
+.productsSection {
+    background-color: white;
+    display: flex;
+    justify-content: center;
+    width: 100%;
+}
+
+.container {
+    width: 80%;
+    background-color: white;
+}
+
+.productsTitle {
+    margin: 30px 0 20px 0;
+}
+
+.filterBtn {
+    border: none;
+    margin-right: 10px;
+    font-size: 16px;
+    background: none;
+    font-weight: 500;
+    cursor: pointer;
+    transition: 0.3s;
+    position: relative;
+}
+
+.filterBtn:hover {
+    color: #d3213b;
+    background: none;
+}
+
+.filterBtn:before {
+    content: "";
+    position: absolute;
+    width: 0;
+    height: 2px;
+    background-color: #d3213b;
+    bottom: -4px;
+    left: 0;
+    transition: 0.3s;
+}
+
+.filterBtn:hover:before {
+    width: 100%;
+}
+
+.grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+    grid-gap: 10px;
+    background-color: white;
+    padding: 20px;
+}
+
+.prdImage {
+    height: 200px;
+}
+
+.prdImage img {
+    height: 100%;
+}
+
+.card {
+    background-color: white;
+    padding: 20px;
+    margin: 10px;
+    border: 1.5px solid #dddddd;
+    padding: 40px;
+    transition: 0.3s;
+    overflow: hidden;
+}
+
+.card:hover {
+    border-color: #d3213b;
+}
+
+.cardBody {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.cardBody h5 {
+    font-size: 20px;
+    margin-top: 20px;
+}
+
+.cardBody p {
+    color: #d3213b;
+    font-size: 20px;
+    font-weight: 700;
+    margin-top: 5px;
+}
+
+.buyNow {
+    background-color: #d3213b;
+    padding: 10px 25px;
+    color: white;
+    font-weight: 500;
+    border-radius: 20px;
+    margin-top: 20px;
+    transform: translateY(20px);
+    transition: 0.3s;
+    opacity: 0;
+}
+
+.card:hover .buyNow {
+    opacity: 1;
+    transform: translateY(0px);
+}

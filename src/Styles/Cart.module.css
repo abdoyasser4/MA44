@@ -1,0 +1,291 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+* {
+    padding: 0;
+    margin: 0;
+    font-family: 'Montserrat', sans-serif;
+}
+.totalPrice {
+    margin-top: 20px;
+    padding-bottom: 20px;
+    text-align: center;
+    font-size: 24px;
+    font-weight: bold;
+  }
+  
+  .totalPriceValue {
+    color: #d3213b;
+  }
+.cartSection {
+    display: flex;
+    justify-content: center;
+   
+}
+
+.container {
+    width: 80%;
+    display: flex;
+    grid-gap: 5px;
+    background-color: white;
+    padding: 5px;
+}
+
+.card {
+    background-color: white;
+    padding: 5px;
+    width: 100%;
+    height: 140px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border: 1px solid #dddddd;
+    transition: 0.3s;
+}
+
+.card:hover {
+    border-color: #d3213b;
+}
+
+.cardContent {
+    display: flex;
+    align-items: center;
+    gap: 30px;
+    padding: 20px;
+    height: calc(100% - 30px);
+    width: 80%;
+}
+
+.image {
+    height: 110px;
+    width: 100px;
+}
+
+.image img {
+    height: 100%;
+}
+
+.prdDetails {
+    width: 100%;
+}
+
+.prdDetails h3 {
+    font-size: 22px;
+    transition: 0.3s;
+}
+
+.card:hover h3 {
+    color: #d3213b;
+}
+
+.prdDetails p {
+    font-size: 18px;
+    font-weight: bold;
+    color: #d3213b;
+    margin-top: 10px;
+}
+
+.card button {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    border: none;
+    background-color: white;
+    border: 1px solid white;
+    color: black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-right: 20px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.card:hover button {
+    border-color: #d3213b;
+    color: #d3213b;
+}
+
+button:hover {
+    background-color: #d3213b;
+}
+
+button:hover .delIcon {
+    color: white;
+}
+
+.checkOut {
+    background-color: #d3213b;
+    padding: 10px 25px;
+    color: white;
+    font-weight: 500;
+    border-radius: 20px;
+    margin: 20px auto 30px auto;
+    transition: 0.3s;
+}
+
+.cartSection {
+    width: 100%;
+    background-color: white;
+}
+
+.emptyContainer {
+    width: 80%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.emptyContainer h1 {
+    position: absolute;
+    color: #d3213b;
+    font-size: 50px;
+    opacity: 0.6;
+}
+
+.emptyImage {
+    width: 50%;
+    opacity: 0.2;
+    margin: 0 auto;
+}
+
+@media (max-width: 575.999px) {
+    .emptyImage {
+        width: 100%;
+        margin-top: -100px;
+    }
+
+    .emptyContainer h1 {
+        font-size: 30px;
+        opacity: 0.6;
+    }
+
+    .card {
+        height: 140px;
+    }
+
+    .cardContent {
+        gap: 15px;
+        padding: 10px;
+    }
+
+    .image {
+        height: 80px;
+        width: 100px;
+    }
+
+    .prdDetails h3 {
+        font-size: 10px;
+    }
+
+    .prdDetails p {
+        font-size: 12px;
+        margin-top: 2px;
+    }
+
+    .card button {
+        transform: scale(0.7);
+        margin: 0;
+    }
+
+}
+
+@media (min-width: 576px) and (max-width: 767.999px) {
+    .emptyImage {
+        width: 100%;
+        margin-top: -100px;
+    }
+
+    .emptyContainer h1 {
+        font-size: 40px;
+        opacity: 0.6;
+    }
+
+    .card {
+        height: 140px;
+    }
+
+    .cardContent {
+        gap: 20px;
+        padding: 10px;
+    }
+
+    .image {
+        height: 80px;
+        width: 100px;
+    }
+
+    .prdDetails h3 {
+        font-size: 12px;
+    }
+
+    .prdDetails p {
+        font-size: 12px;
+        margin-top: 5px;
+    }
+
+    .card button {
+        transform: scale(0.7);
+        margin: 0;
+    }
+
+}
+
+@media (min-width: 768px) and (max-width: 991.999px) {
+    .emptyImage {
+        width: 100%;
+        margin-top: -100px;
+    }
+
+    .emptyContainer h1 {
+        font-size: 55px;
+        opacity: 0.6;
+    }
+
+    .card {
+        height: 140px;
+    }
+
+    .cardContent {
+        gap: 20px;
+        padding: 10px;
+    }
+
+    .image {
+        height: 80px;
+        width: 100px;
+    }
+
+    .prdDetails h3 {
+        font-size: 16px;
+    }
+
+    .prdDetails p {
+        font-size: 16px;
+        margin-top: 5px;
+    }
+
+    .card button {
+        transform: scale(0.8);
+        margin: 0;
+        -webkit-transform: scale(0.8);
+        -moz-transform: scale(0.8);
+        -ms-transform: scale(0.8);
+        -o-transform: scale(0.8);
+    }
+    
+}
+
+
+@media (min-width: 992px) and (max-width: 1199.999px) {
+    .emptyImage {
+        width: 90%;
+        margin-top: -100px;
+    }
+
+    .emptyContainer h1 {
+        font-size: 55px;
+        opacity: 0.6;
+    }
+}
+
+@media (min-width: 1200px) {}

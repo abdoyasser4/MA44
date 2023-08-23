@@ -1,0 +1,130 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+* {
+    padding: 0;
+    margin: 0;
+    font-family: 'Montserrat', sans-serif;
+}
+
+.upperNav {
+    background-color: #15161d;
+    border-bottom: 5px solid #d3213b;
+    display: flex;
+    justify-content: center;
+}
+
+.upperNav .container {
+    width: 80%;
+    padding: 25px 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo {
+    color: white;
+    font-size: 40px;
+    font-weight: 600;
+}
+
+.cartLogout {
+    display: flex;
+    gap: 10px;
+}
+
+.cart {
+    color: white;
+    /* border: 1px solid; */
+    padding: 10px;
+    display: flex;
+    align-items: center;
+    position: relative;
+}
+
+.cart span {
+    background-color: #d3213b;
+    padding: 5px;
+    width: 10px;
+    height: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    font-size: 13px;
+    position: absolute;
+    right: 7px;
+    top: 4px;
+}
+
+.logout {
+    background: none;
+    color: white;
+    border: none;
+    cursor: pointer;
+}
+
+.logout:hover {
+    background: none;
+}
+
+.lowerNav {
+    display: flex;
+    justify-content: center;
+    border-bottom: 1px solid #cccccc;
+}
+
+.lowerNav .container {
+    width: 80%;
+    padding: 25px 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    list-style: none;
+    gap: 20px;
+}
+
+.lowerNav .container li {
+    position: relative;
+    transition: 0.3s;
+}
+
+.lowerNav .container li:before {
+    content: "";
+    position: absolute;
+    width: 0;
+    height: 2px;
+    background-color: #d3213b;
+    bottom: -5px;
+    left: 0;
+    transition: 0.3s;
+}
+
+.lowerNav .container li:hover:before {
+    width: 100%;
+}
+
+.lowerNav .container li:hover .navLink {
+    color: #d4213c;
+}
+
+.navLink {
+    color: #666666;
+    font-weight: 500;
+}
+
+.mydiv{
+    display: flex;
+}
+.Name{
+   color: #d3213b;
+    font-size:30px ; 
+   font-weight: bold;
+   margin-top: 7px;
+}
+.photo{
+    width: 40px;
+    padding: 4px;
+    border-radius: 50%;
+    border: 2px solid #d3213b;
+    margin-right: 6px;
+}
