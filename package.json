@@ -31,6 +31,7 @@
    "predeploy":"npm run build",
    "deploy":"gh-pages -d build",
     "start": "react-scripts start",
+    "prestart": "npm run jsonserver",
     "jsonserver": "json-server --watch data.json --port 2000",
     "build": "react-scripts build",
     "test": "react-scripts test",
